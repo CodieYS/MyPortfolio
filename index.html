@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Sacramento&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Yash Portfolio</title>
+
+
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- main CSS3 -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo" onmouseover="replaceText(true)" onmouseout="replaceText(false)">
+            <span id="portfolio-text">Portfolio</span>
+            <span id="yash-sukhija-text" style="opacity: 0;" onclick="goToHome()">Yash Sukhija</span>
+        </a>
+
+        <i class='bx bx-menu' id="menu-icon" onclick="toggleSidebar()"></i>
+
+        <nav class="nav">
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#freelancer">Freelancer</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <div class="sidebar" id="sidebar">
+            <i class='bx bx-x' id="close-icon" onclick="toggleSidebar()"></i>
+            <a href="#about" onclick="toggleSidebar()">About Me</a>
+            <a href="#services" onclick="toggleSidebar()">Services</a>
+            <a href="#freelancer" onclick="toggleSidebar()">Freelancer</a>
+            <a href="#contact" onclick="toggleSidebar()">Contact Me</a>
+        </div>
+    </header>
+
+    <section class="home " id="home">
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="overlay">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Yash Sukhija</h1>
+                <h3>And, I'm a <span>Full Stack Developer</span></h3>
+                <p>Welcome! I'm delighted to have you here. This portfolio is a showcase of my journey as a creative
+                    professional, specializing in Full Stack Development, UI/UX Design, and Graphic Design. Whether
+                    you're here to explore my projects, learn about my skills, or connect for collaboration.Feel free to
+                    explore and reach out—I look forward to connecting with you!</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100032344484623" target="_blank"><i
+                            class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.linkedin.com/in/yash-sukhija-209447248/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/CodieYS" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/g.e.m_ys/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+                <a href="#contact"
+                    class="button">Request CV</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="./Untitled design (5)-photoaidcom-cropped.png" alt="" height="400px" width="400px">
+        </div>
+        <div class="home-heading">
+            <h1>Hey, I'm Yash Sukhija</h1>
+        </div>
+
+
+    </section>
+
+
+    <section class="about" id="about">
+        <h1 class="about-heading">About Me</h1>
+        <div class="hr-container">
+            <hr class="about-hr">
+            <div class="circle" id="circle-bg">
+                <div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="./Untitled design (5)-photoaidcom-cropped.png" alt="Yash Sukhija">
+            </div>
+            <div class="about-text">
+                <p class="about-intro">
+                    Hello, I'm <span class="highlight">Yash Sukhija</span>, a passionate <span class="highlight">Full
+                        Stack Developer</span> with experience in creating dynamic and responsive web applications. I
+                    have a strong background in both frontend and backend technologies, and I love solving complex
+                    problems with elegant solutions. Welcome to my portfolio!
+                </p>
+                <ul class="personal-info">
+                    <li><strong>Name:</strong> Yash Sukhija</li>
+                    <li><strong>Date of birth:</strong> January 12, 2002</li>
+                    <li><strong>Address:</strong> Sirsa Haryana</li>
+                    <li><strong>Zip code:</strong> 125055</li>
+                    <li><strong>Email:</strong> sukhijayash02@gmail.com</li>
+                </ul>
+                <a href="#contact" class="hire-me-btn">Hire Me</a>
+            </div>
+
+        </div>
+        <div class="what-i-made">
+            <!-- Left Side: What I Made -->
+            <div class="left-side">
+                <h2 class="section-heading ">What I Made</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./tindog project.png" alt="Project 1">
+                        <div class="card-details">
+                            <h3 class="card-heading">Tin Dog</h3>
+                            <p class="card-description">Responsive website built with Bootstrap, showcasing clean design
+                                and adaptability.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./dice game project.png" alt="Project 2">
+                        <div class="card-details">
+                            <h3 class="card-heading">Rolling Dice</h3>
+                            <p class="card-description">Interactive game where dice numbers change on each page load,
+                                with the higher number winning.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Project3 img.png" alt="Project 3">
+                        <div class="card-details">
+                            <h3 class="card-heading">Calculator</h3>
+                            <p class="card-description">Basic arithmetic calculator for addition, subtraction,
+                                multiplication, and division operations.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./portfolio project.png" alt="Project 4">
+                        <div class="card-details">
+                            <h3 class="card-heading">Portfolio</h3>
+                            <p class="card-description">Multipage portfolio website highlighting skills, projects, and
+                                contact information.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./simon project.png" alt="Project 5">
+                        <div class="card-details">
+                            <h3 class="card-heading">Simon Game</h3>
+                            <p class="card-description">Memory game challenging players with color and sound sequences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Project4 img.png" alt="Project 6">
+                        <div class="card-details">
+                            <h3 class="card-heading">Drum kit band</h3>
+                            <p class="card-description">Keyboard-controlled drum kit simulator producing various drum
+                                sounds.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/CodieYS" target="_blank" class="hire-me-btn">GitHub</a>
+            </div>
+
+            <!-- Right Side: Technology Stack -->
+            <div class="right-side">
+                <div class="technology-stack">
+                    <div class="large-card">
+                        <h3 class="large-card-heading">More Projects</h3>
+                        <div class="sub-cards">
+                            <div class="sub-card">
+                                <h4 class="sub-card-heading">Frontend Projects</h4>
+                                <a href="./frontend.html" class="sub-card-link" target="_blank">Explore more</a>
+                            </div>
+                            <div class="sub-card">
+                                <h4 class="sub-card-heading">Backend Projects</h4>
+                                <a href="./backend.html" class="sub-card-link" target="_blank">Explore more</a>
+                            </div>
+                            <div class="sub-card">
+                                <h4 class="sub-card-heading">Designing Projects</h4>
+                                <a href="./graphic.html" class="sub-card-link" target="_blank">Explore more</a>
+                            </div>
+                            <!-- Add more sub-cards as needed -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What I Know Section -->
+                <div class="what-i-know">
+                    <h2 class="section-heading">What I Know</h2>
+                    <div class="knowledge-cards">
+                        <div class="knowledge-card frontend">
+                            <h3 class="card-heading">Frontend Development</h3>
+                            <p class="card-description">
+                                HTML5, CSS3, JavaScript, bootstrap, JQuery
+                            </p>
+                        </div>
+                        <div class="knowledge-card backend">
+                            <h3 class="card-heading">Backend Development</h3>
+                            <p class="card-description">
+                                Node.js, Express.js, GitHub Control, PostgreSQL
+                            </p>
+                        </div>
+                        <div class="knowledge-card graphic-design">
+                            <h3 class="card-heading">Graphic Designing</h3>
+                            <p class="card-description">
+                                Adobe Photoshop, Adobe Illustrator, Figma, Canva
+                            </p>
+                        </div>
+                        <div class="knowledge-card Programming-language">
+                            <h3 class="card-heading">Programming Language</h3>
+                            <p class="card-description">
+                                C, C++, Java, Python
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="service-heading">Services</h1>
+        <div class="hr-container">
+            <hr class="about-hr">
+            <div class="circle" id="circle-bg">
+                <div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </div>
+        <div class="services-content">
+            <h3 class="centered-heading">This is My Expertise, The Services I'll Provide to My Clients</h3>
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="service-details">
+                        <div class="service-video">
+                            <video autoplay muted loop>
+                                <source src="./UIUX design animation.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h1>UI/UX Design</h1>
+                        <p>Transforming ideas into intuitive and visually appealing user interfaces that enhance
+                            user experience and engagement. From wireframing to prototyping, I craft interfaces that
+                            are both functional and delightful.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-details">
+                        <div class="service-video">
+                            <video autoplay muted loop>
+                                <source src="./web development.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h1>Web Development</h1>
+                        <p>Building responsive and dynamic websites tailored to meet your business needs. Using
+                            modern technologies and frameworks, I ensure robust functionality and seamless
+                            performance across all devices.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-details">
+                        <div class="service-video">
+                            <video autoplay muted loop>
+                                <source src="./Graphic Designer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h1>Graphic Design</h1>
+                        <p>Creating impactful visual identities through logos, branding materials, and marketing
+                            collaterals. I blend creativity with strategy to communicate your brand’s unique story
+                            effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="services-paragraph">Contact me to discuss your project needs. <a href="#contact"
+                    class="contact-link">Contact Me</a></p>
+        </div>
+        </div>
+    </section>
+
+    <section id="freelancer" class="my-work-section">
+        <h1 class="freelancer-heading">Freelancing</h1>
+        <div class="hr-container">
+            <hr class="about-hr">
+            <div class="circle" id="circle-bg">
+                <div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </div>
+        <div class="my-work-container" id="myWorkContainer">
+            <!-- Project Cards -->
+            <div class="my-work-card">
+                <img src="./Project 6.png" alt="Project 1">
+                <div class="overlay-work">
+                    <h3>Logo</h3>
+                    <p>I designed a logo for my teacher's online teaching website, reflecting his professional identity.
+                    </p>
+                </div>
+            </div>
+            <div class="my-work-card">
+                <img src="./Untitled design (1).png" alt="Project 2">
+                <div class="overlay-work">
+                    <h3>Tuition Template</h3>
+                    <p> I created a professional tuition template for my senior's tutoring services.</p>
+                </div>
+            </div>
+            <div class="my-work-card">
+                <img src="./mywork3.png" alt="Project 3">
+                <div class="overlay-work">
+                    <h3>Tour Schedule PPT</h3>
+                    <p>I created a tour schedule PowerPoint presentation for college students.
+                    </p>
+                </div>
+            </div>
+
+            <div class="my-work-card">
+                <img src="./mywork5done.png" alt="Project 4">
+                <div class="overlay-work">
+                    <h3>Hotel Management PPT</h3>
+                    <p>I made a hotel management PowerPoint presentation for my junior.</p>
+                </div>
+            </div>
+            <div class="my-work-card">
+                <img src="./mywork4.png" alt="Project 5">
+                <div class="overlay-work">
+                    <h3>Logo</h3>
+                    <p>I designed a logo for my teacher's education website.</p>
+                </div>
+            </div>
+            <div class="my-work-card">
+                <img src="./mywork6.png" alt="Project 6">
+                <div class="overlay-work">
+                    <h3>Banking System Frontend</h3>
+                    <p>I developed a basic banking system frontend for my friend's final year project.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-heading-f">
+            <h2>I'm Available to Work as a Freelancer</h2>
+            <p>With a passion for creating amazing projects and delivering results that exceed expectations.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1 class="contact-heading">Contact Me</h1>
+        <div class="hr-container">
+            <hr class="about-hr">
+            <div class="circle" id="circle-bg">
+                <div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Let's Chat,</h2>
+                <h2>Tell me about your Project and Ideas.</h2>
+                <p>Let's create something Together.</p>
+                <div class="contact-email">
+                    <img src="./mail.png" alt="Mail Icon">
+                    <a href="mailto:sukhijayash02@gmail.com">sukhijayash02@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-right-container">
+                <div class="contact-right">
+                    <h2>Send me a Message</h2>
+                    <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="6beb91de-1fb5-4926-bb07-236263f507b6">
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="portfolio-footer">
+        <div class="footer-container">
+            <div class="footer-section about-section">
+                <h2>About Me</h2>
+                <p> Hello, I'm Yash Sukhija, a passionate Full Stack Developer with experience in creating dynamic and
+                    responsive web applications.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100032344484623" target="_blank"><i
+                            class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.linkedin.com/in/yash-sukhija-209447248/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/CodieYS" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/g.e.m_ys/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <div class="footer-section quick-links-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#freelancer">freelancer</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-section">
+                <h2>Contact</h2>
+                <ul>
+                    <li><span>Address:</span> Sirsa, Haryana, India</li>
+                    <li><span>Email:</span> sukhijayash02@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CodieYS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
